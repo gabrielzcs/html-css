@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BackGround Image 06</title>
+    <style>
+      body {
+        height: 98vh;
+        /* background-color: black;
+        background-image: url(images/wallpaper002.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; */
+
+        background: black url(images/wallpaper002.jpg) center top no-repeat
+        fixed;
+        background-size: cover;
+      }
+      main {
+        margin: auto;
+        max-width: 400px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="background05.html">previous page</a></p>
+    <p><a href="background07.html">next page</a></p>
+    <main>
+      <h1>Background Shorthand</h1>
+      <p>Shorthands for background:</p>
+      <p>background: color > image > position > repeat  > attachment</p>
+      <h2>For this site, the background shorthand is this:</h2>
+      <p>
+        background: black url(images/wallpaper002.jpg) center top no-repeat
+        fixed;
+      </p>
+      <h2>Centering a box inside of a box</h2>
+      <p>
+        To center a box inside of a box, you'll need to change the position of the outside box to relative(default position of a box is already relative).
+      </p>
+      <p>Now for the box you want centered, you'll need to set the position to 'absolute' so that you can move it left, right, top and bottom. Once you do that, set the left and top to 50% so that the box aligns in the center. You'll see that the left top corner of the box is aligned in the midle of the outside box</p>
+      <p>To align correctly we'll need to use the 'transform' property like this</p>
+      <p>transform: translate(-50%, -50%);</p>
+    </main>
+  </body>
+</html>
