@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonts in CSS</title>
+    <style>
+      body {
+        text-align: justify;
+      }
+      h1,
+      h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        font-style: italic;
+      }
+      p {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="font02.html" target="_self"> segunda pagina</a>
+    <h1>Fonts</h1>
+    <h2>Choosing a Font (font-family)</h2>
+    <p>
+      To choose a font you need to use the <strong>font-family</strong> property
+      in your CSS file. This property can hold multiples font names as backup in
+      case a specific browser doesn't support the one you chose first. Always
+      put a generic name in the end like: sans-serif, serif, monospace, etc. To
+      make sure that if none of the fonts you chose are compatible, it will use
+      a deafult font of the browser
+    </p>
+    <h2>Metrics (font-size)</h2>
+    <h3>
+      The recomendation is to use px(pixels) and em(size compared to the default
+      browser font size. 1em = 16px)
+    </h3>
+    <p>Absolute Metrics:</p>
+    <p>cm, mm, in, px, pt, pc</p>
+    <p>Relative Metrics:</p>
+    <p>em, ex, rem, vw, vh, &</p>
+    <h2>Font Weight (font-weight)</h2>
+    <p>Font weight shows how thick of thin a font is gonna be</p>
+    <p>It can be: Lighter, Normal, Bold, Bolder</p>
+    <h2>Shorthand (font:)</h2>
+    <p>
+      Shorthand is used to make it easier to configurate your font. It does that
+      by making it one line command only, like this:
+    </p>
+    <p>font: (font-style), (font-weight), (font-size), (font-family);</p>
+    <p>
+      font: <abbr title="font-style">italic</abbr>,
+      <abbr title="font-weight">bolde</abbr>,
+      <abbr title="font-size">15px</abbr>,
+      <abbr title="font-family">'Courier New', Courier, monospace</abbr>;
+    </p>
+    <p>You only need to type the names you want. In this exect order</p>
+  </body>
+</html>

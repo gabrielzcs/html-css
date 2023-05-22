@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="boxes.html" target="_self">primeira pagina</a>
+    <header>
+      <h1>Grouping Tags, Shadows and Border Radius and Border Image</h1>
+      <nav>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+        <a href="#">LINK</a>
+      </nav>
+    </header>
+    <main>
+      <section class="news">
+        <article>
+          <h2>Header, Main and Footer</h2>
+          <p>
+            To create a semantic website, is recommended to use Grouping tags
+            such as &lt;header&gt;, &lt;main&gt; and &lt;footer&gt;
+          </p>
+          <p>
+            You can also use the &lt;section&gt;, &lt;article&gt; and
+            &lt;aside&gt; tags (usually inside the main tag) to create a more
+            readable site
+          </p>
+        </article>
+        <article>
+          <h2>Adding Shadows to your box</h2>
+          <p>
+            To add shadow to a box, you simply need to use the command
+            'box-shadow: right-leftpx top-bottompx blurpx spreadpx color';
+          </p>
+        </article>
+        <article>
+          <h2>Border Radius</h2>
+          <p>
+            To change the border radius of an element, you'll need to use the
+            'border-radius: px or %; <br />
+            You can use that to create smooth looking boxes to your website
+          </p>
+        </article>
+        <article id="img">
+          <h2>Border Image</h2>
+          <p>
+            To create a personalized border, you need to save the image you want
+            in your folder and use the command:
+          </p>
+          <pre>
+border: 10px solid trasparent;
+border-image-source: url('folder-name/image-name.png');
+border-image-slice: x;
+border-image-repeat: repeat/stretch;
+          </pre>
+          <p>ShortHand:</p>
+          <pre>
+border-image: url('folder-name/image-name.png') x repeat/stretch;
+          </pre>
+        </article>
+        <aside>
+          <p>Writen by me</p>
+        </aside>
+      </section>
+    </main>
+    <footer>Developed by gabrieL</footer>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boxes</title>
+    <style>
+      .test {
+        background-color: lightgray;
+        height: 200px;
+        width: 200px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: rgb(110, 110, 110);
+        
+        /* border: 10px solid rgb(110,110,110); */
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+
+        /* padding: 10px 10px 10px 10px; */
+
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+
+        /* magin: 10px 10px 10px 10px; */
+
+        outline-width: 5px;
+        outline-style: dashed;
+        outline-color: rgb(0, 0, 0);
+
+        /* outline: 5px dashed #000 */
+      }
+      a{
+        background-color: rgb(144, 204, 40);
+        border-width: 2px;
+        border-style: dotted;
+        border-color: rgb(17, 85, 17);
+
+        padding: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="boxes2.html" target="_self">segunda pagina</a>
+    <h1>Box Level and Inline Level</h1>
+    <h2>
+      Box level will use all the width of a page and will break lines automatic,
+      both up and down.
+    </h2>
+    <h3>Box level examples:</h3>
+    <p>&lt;div&gt;</p>
+    <p>&lt;h1-h6&gt;</p>
+    <p>&lt;main&gt;</p>
+    <p>&lt;header&gt;</p>
+    <p>&lt;nav&gt;</p>
+    <p>&lt;article&gt;</p>
+    <p>&lt;aside&gt;</p>
+    <p>&lt;footer&gt;</p>
+    <p>&lt;form&gt;</p>
+    <p>&lt;video&gt;</p>
+    <h2>
+      Inline Level will only use the space to support whats inside of it and
+      will not break line
+    </h2>
+    <h3>Inline Level Examples:</h3>
+    <p>&lt;span&gt;</p>
+    <p>&lt;a&gt;</p>
+    <p>&lt;code&gt;</p>
+    <p>&lt;small&gt;</p>
+    <p>&lt;strong&gt;</p>
+    <p>&lt;em&gt;</p>
+    <p>&lt;sup-sub&gt;</p>
+    <p>&lt;label&gt;</p>
+    <p>&lt;button&gt;</p>
+    <p>&lt;input&gt;</p>
+    <p>&lt;select&gt;</p>
+    <h1>Shorthands for box border, padding, margin and outline: </h1>
+    <p>border: border-width border-style border-color;</p>
+    <p>paddin: padding-top padding-right padding-bottom padding-left;</p>
+    <p>margin: margin-top margin-right margin-bottom margin-left;</p>
+    <h1 class="test">H1 Are Box Level</h1>
+    <p>Paragraphs are Box Level</p>
+    <p>Lorem ipsum dolor sit amet consectetur <a href="#">Links are Inline Level</a>. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, placeat.</p>
+  </body>
+</html>

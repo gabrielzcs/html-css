@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>External Fonts</title>
+    <style>
+      @font-face {
+        font-family: "Morden";
+        src: url("fonts/Morden.otf") format("opentype"),
+          url("fonts/Morden.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "Bold Font";
+        src: url(fonts/THEBOLDFONT.otf) format("opentype"),
+          url(fonts/THEBOLDFONT.ttf) format("truetype");
+      }
+      body {
+        font-family: Morden, Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        font-family: "Bold Font", Times, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="fonts01.html">primeira pagina</a></p>
+    <h1>Using External Fonts</h1>
+    <p>
+      If you want to download a font from a website (im using
+      <a href="https://www.dafont.com/pt/" target="_blank">dafont</a>), you'll
+      need to use the @font-face rule to creat it, like this:
+    </p>
+    <pre>
+@font-face{
+  font-family: 'font-name';
+  src: url('folder-name/font-name.otf') format('opentype'),
+  url('folder-name/font-name.ttf') format('truetype');
+}      
+    </pre>
+    <p>
+      You can also use the<a
+        href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-br"
+        target="_blank"
+      >
+        Fonts Ninja</a
+      >
+      Google Chrome extension to get a font from any website
+    </p>
+    <p>
+      And also
+      <a href="https://www.whatfontis.com/" target="_blank"> What Font Is</a>,
+      <a href="https://www.fontsquirrel.com/" target="_blank"> Font Squirrel</a>
+      and the
+      <a href="https://www.myfonts.com/" target="_blank"> My Fonts</a> websites
+      to find fonts from images
+    </p>
+  </body>
+</html>

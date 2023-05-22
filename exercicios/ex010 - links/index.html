@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Links</title>
+    </head>
+    <body>
+        <h1>Links</h1>
+        <h2>Using External Links</h2>
+        <p>To create an external link, use the tag: &lt;a href="link-here"&gt;Name of your link &lt;/a&gt;</p>
+        <p>Example of an external link:</p>
+        <p>My <a href="https://www.youtube.com/@gabrielzcs">YouTube</a> channel</p>
+        <p>To make so your page doesn't close, use the attribute: target="_blank", and rel="external"<br> to indicate that it's an external link you're using</p>
+        <p>My <a href="https://www.twitch.tv/gaabriiel/" target="_blank" rel="external">Twitch</a> channel</p>
+        <h2>Using Internal Links</h2>
+        <p>When using Internal Links, you'll need to add the attributes: target="next, prev", and rel="self, nofollow"</p>
+        <p>To create an Internal Link, you need to a have another HTML file in your folder. And than use the same &lt;a&gt; tag with your file's name: &lt;a href="file-name.html"&gt;</p>
+        <a href="pag002.html" target="_self" rel="next">Second Page<a>
+        <p>If your HTML file is in a folder inside your folder, you need to add the folder's name to the hyperlink attribute: <br>&lt;a href="folder-name/file-name.html"&gt;</p>
+        <a href="pag003/pag003.html">Third Page</a>
+        <h2>Download Links</h2>
+        <ul>
+            <li><a href="livro/exemplo.pdf" download="exemplo.pdf" type="application/pdf">pdf Book</a></li>
+            <li><a href="livro/exemplo.zip" download="exemplo.zip" type="application/zip">zip Book</a></li>
+        </ul>
+    </body>
+</html>

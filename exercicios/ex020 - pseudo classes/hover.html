@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover</title>
+    <style>
+        div > p{
+            display: none;
+        }
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: black;
+            width: 105px;
+        }
+      div:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="pseudo-classes.html" target="_self">primeira pagina</a> <br>
+    <a href="pseudo-elements.html" target="_self">terceira pagina</a>
+    <h1>Hover Example</h1>
+    <div>Hover your mouse here
+        <p>Hidden treasure</p>
+    </div>
+    <p>End of example</p>
+  </body>
+</html>

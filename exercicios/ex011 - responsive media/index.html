@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Media</title>
+    </head>
+    <body>
+        <h1>Responsive Designs</h1>
+        <h2>Responsive Images</h2>
+        <p>Using the tags <strong>&lt;picture&gt; and &lt;source media="(min-width:)" srcset="your-img.png" type="image/png"&gt;</strong> to create responsive images</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="images/s-img.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="images/m-img.png" type="image/png">
+            <img src="images/l-img.png" alt="Responsive Image">
+        </picture>
+        <picture>
+            <source media="(max-width: 750px)" srcset="images/gaming-crop.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="images/gaming-700.png" type="image/png">
+            <img src="images/gaming-1000.png" alt="Responsive Image">
+        </picture>
+        <h2>Responsive Audio</h2>
+        <p>Creating responsive audio with <strong>&lt;audio&gt; and &lt;source src="file-name.mp3" type="audio/mp3"&gt;</strong> tags</p>
+        <p>Inside the tag &lt;audio&gt;, you have different attributes like; 'preload="auto/metadata/none"', 'controls', 'loop', 'autoplay'</p>
+        <audio preload="metadata" controls>
+            <source src="audio/Eminem - Lose Yourself [HD].mp3" type="audio/mpeg">
+        </audio>
+    </body>
+</html>

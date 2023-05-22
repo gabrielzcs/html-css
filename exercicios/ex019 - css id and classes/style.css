@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(46, 231, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    text-align: justify;
+}
+
+#dif{
+    text-align: right;
+    color: red;
+}
+.title{
+    text-align: center;
+}
+.basic{
+    color: rgb(175, 153, 56);
+}
+.intermediate{
+    color: rgb(110, 49, 167);
+}
+.advanced{
+    color: rgb(255, 0, 0);
+}

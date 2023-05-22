@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Elements</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      a {
+        color: green;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      a:visited {
+        color: rgb(0, 78, 0);
+      }
+      a:hover {
+        color: rgb(102, 255, 0);
+        text-decoration: line-through;
+      }
+      .exmp::before{
+        content: '♢';
+      }
+    </style>
+  </head>
+  <body>
+    <a href="hover.html" target="_self">segunda pagina</a>
+    <h1>Links</h1>
+    <p>Some More pseudo-classes examples are links</p>
+    <p>
+      You can change how a link looks when you have already clicked on it, when
+      you hover it and when you click on it
+    </p>
+    <ul>
+      <li>
+        <a href="https://youtube.com/@gabrielzcs" target="_blank">Youtube</a>
+      </li>
+      <li><a href="https://twitch.tv/gaabriiel" target="_blank">Twitch</a></li>
+    </ul>
+    <h2>Using Pseudo Elements</h2>
+    <p>Pseudo elements is used to style specified parts of an element. You do that by using ::
+    <pre>
+    class-name::before/after{
+        content:'♢';
+    }
+                </pre>
+    </p>
+    <p>For example</p>
+    <ul>
+      <li>
+        <a href="https://twitter.com/gabrielzcs" target="_blank" class="exmp">Twitter</a>
+      </li>
+      <li>
+        <a href="https://instagram.com/gabrielzcs_/" target="_blank" class="exmp"
+          >Instagram</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
