@@ -6,52 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tables 2</title>
     <style>
-        table{
-            background-color: rgb(230, 229, 229);
-            border-collapse: collapse;
-        }
-        thead{
-            background-color: rgb(148, 148, 148);
-        }
-        tr{
-        }
-        td{
-            padding: 10px;
-            border: 1px solid black;
-        }
+      table {
+        background-color: rgb(255, 255, 255);
+        border-collapse: collapse;
+        width: 300px;
+        position: relative;
+      }
+      tbody > tr:nth-child(2n) {
+        background-color: rgb(190, 190, 190);
+      }
+      caption {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(181, 179, 179);
+        color: white;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      thead,
+      tfoot {
+        background-color: rgb(118, 118, 118);
+        color: white;
+        text-align: center;
+        font-weight: bold;
+      }
+      table > thead > tr{
+        position: sticky;
+        top: -1px;
+        background-color: rgb(118, 118, 118);
+      }
+      tr {
+      }
+      td,
+      th {
+        padding: 10px;
+        border: 1px solid black;
+      }
     </style>
   </head>
   <body>
     <h1>Tables Example</h1>
     <table>
-        <thead>
-          <tr>
-            <td>Estates</td>
-            <td>Population</td>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Sao Paulo</td>
-                <td>41 262 199</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td>19 597 330</td>
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td>15 989 929</td>
-            </tr>
-            <tr>
-                <td>Bahia</td>
-                <td>14 016 906</td>
-            </tr>
-            <tr>
-                <td>Parana</td>
-                <td>10 444 526</td>
-            </tr>
-        </tbody>
+      <caption>
+        Population of Brazil States
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">States</th>
+          <th scope="col" style="width: 100px">Population</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sao Paulo</td>
+          <td>41 262 199</td>
+        </tr>
+        <tr>
+          <td>Minas Gerais</td>
+          <td>19 597 330</td>
+        </tr>
+        <tr>
+          <td>Rio de Janeiro</td>
+          <td>15 989 929</td>
+        </tr>
+        <tr>
+          <td>Bahia</td>
+          <td>14 016 906</td>
+        </tr>
+        <tr>
+          <td>Parana</td>
+          <td>10 444 526</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Total</th>
+          <td>101.310.860</td>
+        </tr>
+      </tfoot>
     </table>
+    <p>
+      Zebra Effect and sticky
+    </p>
   </body>
 </html>

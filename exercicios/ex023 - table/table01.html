@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tables</title>
     <style>
+      body{
+      }
       table {
         background-color: rgb(233, 231, 231);
         border: 1px solid black;
-        width: 800px;
-        height: 300px;
+        width: 700px;
+        height: 80vh;
         border-collapse: collapse;
       }
       tr.dark {
@@ -24,31 +26,31 @@
   </head>
   <body>
     <h1>Tables in HTML</h1>
-    <h2>Table tags and css propertys:</h2>
+    <h2>Table tags, attributes and css propertys:</h2>
     <table>
       <tr class="dark">
         <td>&lt;table&gt; (opens a table)</td>
+        <td>&lt;caption&gt; (table caption)</td>
+        <td>&lt;thead&gt; (table head)</td>
         <td>&lt;th&gt; (table header)</td>
+      </tr>
+      <tr>
+        <td>&lt;tbody&gt; (table body)</td>
         <td>&lt;tr&gt; (table row)</td>
         <td>&lt;td&gt; (table data)</td>
-      </tr>
-      <tr>
-        <td>&lt;thead&gt; (table head)</td>
-        <td>&lt;tbody&gt; (table body)</td>
         <td>&lt;tfoot&gt; (table foot)</td>
-        <td>B2</td>
       </tr>
       <tr class="dark">
-        <td>to make lines in your table:<br />border-collapse: collapse</td>
-        <td>B3</td>
-        <td>C3</td>
-        <td>D3</td>
+        <td>scope="col, colgroup, row, rowgroup" attributes</td>
+        <td>rowspan="num" and colspan="num" to merge cels</td>
+        <td>tags &lt;colgroup&gt; and &lt;col&gt; to select collums</td>
+        <td>C4</td>
       </tr>
       <tr>
-        <td>A4</td>
-        <td>B4</td>
-        <td>C4</td>
-        <td>D4</td>
+        <td>position: sticky; top: 0px; for the thead to always show on the screen</td>
+        <td>to make lines in your table:<br />border-collapse: collapse</td>
+        <td>zebra effect: <br>tbody > tr:nth-child(odd, even, 2n)</td>
+        <td>responsive tables: overflow-x: auto; in a div that contains the whole table</td>
       </tr>
     </table>
   </body>
