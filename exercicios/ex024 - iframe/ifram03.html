@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opening your pages with iframe</title>
+    <style>
+      body {
+      }
+      iframe {
+        border: 2px solid black;
+        width: 95vw;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="extra-pages/pag01.html" target="test">primeira pagina</a>
+      </li>
+      <li><a href="extra-pages/pag02.html" target="test">segunda pagina</a></li>
+      <li>
+        <a href="extra-pages/pag03.html" target="test">terceira pagina</a>
+      </li>
+    </ul>
+    <h1>Teste</h1>
+    <iframe
+      srcdoc="<h1>Creating HTML code inside the iframe</h1><p>To do that, insted of src, we'll use srcdoc='html code here'. And like that you'll be able to create a static page inside the iframe, but once you load any of the other pages, this one won't show again until you reload your website.</p>"
+      name="test"
+      frameborder="0"
+      >Your browser doesn't support iframes</iframe
+    >
+    <p>
+      You do that by creating a 'name' attribute to the iframe tag, and a
+      'target="name"' to the link you want in your page
+    </p>
+  </body>
+</html>
