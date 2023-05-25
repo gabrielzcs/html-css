@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe</title>
+    <style>
+      iframe {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <iframe src="extra-pages/pag04.html" frameborder="0" sandbox="allow-scripts allow-forms allow-same-origin" referrerpolicy="no-referrer"
+      >Seu navegador nao eh compativel</iframe
+    >
+    <p>Always use 'referrerpolicy="no-referrer"' so that iframes can't use your user's information to create ads</p>
+    <p>You can also use 'sandbox="sandbox/allow-"'. If you use sandbox nothing will be allowed, but if you need somthings, use the allow-what-you-need</p>
+  </body>
+</html>
