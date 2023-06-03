@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Output Example</title>
+  </head>
+  <body>
+    <h1>Output Example</h1>
+    <form action="cadastro.php">
+      <fieldset>
+        <legend>Age</legend>
+        <label for="year">Year you were born:</label>
+        <input
+          type="number"
+          name="year"
+          id="year"
+          min="1900"
+          max="2023"
+          required
+          oninput="calcAge()"
+        />
+        <br />
+        <label for="age">Your Age is:</label>
+        <output id="age"></output>
+      </fieldset>
+    </form>
+    <script>
+      function calcAge() {
+        let atual = new Date().getFullYear()
+        age.innerHTML = Number(atual) - Number(year.value)
+      }
+    </script>
+  </body>
+</html>

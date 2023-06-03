@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Other types of forms</title>
+  </head>
+  <body>
+    <h1>Other types of Forms</h1>
+    <form action="get" autocomplete="on">
+      <p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" maxlength="50" placeholder="Your Name Here" autocomplete="name" required/>
+      </p>
+      <p>
+        <label for="grade">Grade:</label>
+        <input type="number" name="grade" id="grade" min="0" max="10" step="0.1" placeholder="0 to 10" required/>
+      </p>
+      <p>
+        <label for="month">Month:</label>
+        <input type="date" name="month" id="month" value="2023-06" required/>
+      </p>
+      <p>
+        <label for="date">Date of the test:</label>
+        <input type="date" name="date" id="date" value="2023-07-30">
+      </p>
+      <p>
+        <label for="time">Time of the test:</label>
+        <input type="time" name="time" id="time" />
+      </p>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Clear" />
+    </form>
+    <p>Some other attributes you can also use are:</p>
+    <p>maxlength: it determines whats the lenght of what they can write</p>
+    <p>placeholder: let you write a small text to inform the user what that box is for</p>
+    <p>autocomplete: if you have a box for name, you can use the autocomplete="name" so that your browser knows what it is</p>
+    <p>max, min and step: these are for number. Max numbers, min numbers and steps is to set how many numbers it can skip</p>
+    <p>required: if you use this attribute, the user has to sign the box</p>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <p>To create a form, you'll need to use the tag &lt;form&gt;. Inside this tag you'll write what you need in your form and use the tag &lt;input&gt; to choose what this form type is. To link the form input to the word ('Name:' in this case), use the tag &lt;label&gt; and the attribute for="id-of-your-iten".</p>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p><label for="name">Name:</label> <input type="text" name="name" id="name"></p>
+        <p><label for="lastname">Last Name:</label> <input type="text" name="lastname" id="lastname"></p>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+</body>
+</html>

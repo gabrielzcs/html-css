@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email and Phone</title>
+  </head>
+  <body>
+    <h1>Email and Phone</h1>
+    <form action="cadastro.php" autocomplete="on">
+      <fieldset>
+        <legend>Personal Data</legend>
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Name Here" maxlength="30" autocomplete="name" required/>
+        </p>
+        <p>
+          <label for="mail">Email:</label>
+          <input type="email" name="mail" id="mail" autocomplete="email" maxlength="30" required/>
+        </p>
+        <p>
+          <label for="cel">Phone:</label>
+          <input type="tel" name="cel" id="cel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx) xxxx-xxxx" required/>
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Clear" />
+      </p>
+    </form>
+  </body>
+</html>
